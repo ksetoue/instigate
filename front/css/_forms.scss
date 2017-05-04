@@ -1,0 +1,186 @@
+.modal {
+    input,
+    input[type="checkbox"],
+    select {
+        background-color: transparent;
+        border: 0;
+        border-bottom: solid $border-width $lighterColor;
+        border-radius: 0;
+        color: $textColor;
+        height: 35px;
+        margin: 20px 0;
+        width: 100%;
+        &.input-selected {
+            padding: 35px 2% 15px!important;
+        }
+        &.input-selected.input-config {
+            padding: 0px!important;
+        }
+        &.input-selected#foto { //input file
+            padding: 25px 2% 25px 2%!important;
+        }
+        &.field-error {
+            margin-bottom: 10px;
+        }
+        &.input-normal {
+            color: $textColor2;
+        }
+    }
+    label {
+        color: $textColor;
+    }
+}
+
+.form-subgroup {
+    input {
+        width: 35px;
+    }
+    p {
+        display: inline-block;
+    }
+    select {
+        background-color: transparent;
+        border-bottom: solid $border-width $lighterColor;
+        color: $textColor;
+        height: 35px;
+    }
+}
+
+textarea {
+    background-color: $white;
+    border: 0;
+    border-radius: $border-radius;
+    padding: 15px;
+    width: 100%;
+    &:focus {
+        outline: 0;
+    }
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid $border-width $lighterColor;
+    border-radius: 0;
+    color: $textColor;
+    height: 35px;
+    margin: 20px 0;
+    width: 100%;
+    &.input-selected {
+        padding: 35px 2% 15px!important;
+    }
+    &.input-selected.input-config {
+        padding: 0px!important;
+    }
+    &.input-selected#photo { //input file
+        padding: 5px 0!important;
+    }
+    &.field-error {
+        margin-bottom: 10px;
+    }
+    &.input-normal {
+        color: $textColor2;
+    }
+    &.input-edit {
+        height: 30px;
+        margin: 0;
+        &.has-icon {
+            width: calc(100% - 22px);
+        }
+    }
+    &.fake-h2 {
+        font-size: 16pt;
+    }
+    &.fake-h4 {
+        font-size: 12pt;
+    }
+    &.search-input {
+        background-color: $extraLightColor;
+        border-radius: $border-radius;
+        color: $textColor2;
+        height: 40px;
+        margin: 0;
+        padding: 5px 10px;
+        width: 100%;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+select {
+    background-color: $extraLightColor;
+    border: 0;
+    border-radius: $border-radius;
+    color: $white;
+    height: 20pt;
+    &.select-edit {
+        height: 28px;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+label {    
+    color: $textColor2;
+    font-size: 11pt;
+    font-weight: normal;
+    line-height: 11pt;
+    left: 15px;
+    padding-left: 2%;
+    position: absolute;
+    top: 35%;
+    &.field-error {
+        @extend .field-error;
+    }
+    &.label-selected {
+        font-size: 9pt;
+        top: 10px;
+    }
+    &.label-config {
+        color: $textColor;
+        left: 0;
+        padding-left: 15px;
+    }
+}
+
+input[type="reset"],
+input[type="submit"],
+.btn-primary {
+    background-color: $lighterColor;
+    border: 0;
+    border-radius: $border-radius;
+    color: $white;
+    height: initial;
+    margin: 0;
+    padding: 5px 10px;
+    width: auto;
+    &:active, &:focus, &:hover {
+        background-color: $lighterColor;
+        outline: 0;
+    }
+    @media (min-width: 1024px) {
+        &:active, &:focus, &:hover {
+            background-color: $darkerColor;
+            outline: 0;
+        }
+    }
+    &.current {
+        background-color: $darkerColor;
+    }
+}
+
+.btn-left {
+    float: left;
+}
+
+.btn-right {
+    float: right;
+}
+
+.field-error {
+    border-bottom-color: $errorColor;
+    color: $errorColor;
+    font-size: 10pt;
+}

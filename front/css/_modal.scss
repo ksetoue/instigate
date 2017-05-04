@@ -1,0 +1,51 @@
+.modal-content {
+    background-color: $textColor2 - 10;
+}
+
+.modal-header {
+    border-bottom-color: $white - 25;
+    h4 {
+        color: $middleColor;
+        font-size: 14pt;
+    }
+}
+
+.modal-body {
+    text-align: center;
+    form {
+        margin: 10px 0;
+        input, select {
+            background-color: $inputBgColor;
+            border: 0;
+            border-radius: $border-radius;
+            color: $textColor;
+            margin: 0;
+            padding: 25px 2% 25px 2%;
+            z-index: 2;
+            &.field-error {
+                @extend .field-error;
+            }
+        }
+    }
+    p {
+        color: $darkerColor;
+        display: inline-block;
+        font-size: 11pt;
+    }
+    hr {
+        border-top-color: $inputBgColor;
+        display: inline-block;
+        margin: 20px 15px;
+        vertical-align: middle;
+        width: 33%;
+    }
+}
+
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: $errorColor;
+}
+
+.tooltip-inner {
+    background-color: $errorColor;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "imaginecup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon --watch * server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-storage": "^2.1.0",
+    "body-parser": "^1.17.1",
+    "busboy": "^0.2.14",
+    "connect-busboy": "0.0.2",
+    "express": "^4.15.2",
+    "formidable": "^1.1.1",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

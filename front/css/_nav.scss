@@ -1,0 +1,58 @@
+/* menu */
+nav.col-md-2 {
+    background-color: $middleColor;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    &.col-md-2{
+        padding: 0;
+    }
+    ul {
+        float: none;
+    }
+    .glyphicon {
+        font-size: 13pt;
+        padding-right: 10px;
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 12pt;
+            padding-right: 0;
+        }
+    }
+    .nav-stacked>li+li {
+        margin-top: 0;
+    }
+    .nav-pills, .nav-tabs.nav-justified, .nav {
+        &>li>a{
+            border-bottom: 1px solid $middleColor + 25;
+            border-radius: 0;
+            color: $textColor2;
+            display: block;
+            font-size: 12pt;
+            padding: 15px 15%;
+            &.active, &:focus, &:hover {
+                background-color: $middleColor - 10;
+                color: $textColor2;
+                outline: 0;
+                @media (min-width: 992px) {
+                    &:hover, &:focus{
+                        background-color: $middleColor - 10;
+                        color: $textColor2;
+                        outline: 0;
+                    }
+                }
+            }
+            @media (max-width: 767px) {
+                padding: 12px 15%;
+            }
+            @media (max-width: 991px) {
+                &:hover, &:focus{
+                    background-color: $middleColor;
+                    color: $textColor2;
+                    outline: 0;
+                }
+            }
+        }
+    }
+}

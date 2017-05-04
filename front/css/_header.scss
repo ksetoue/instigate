@@ -1,0 +1,9 @@
+header.col-md-10 {
+	background-color: $lighterColor;
+	padding: 25px;
+	.search-input-wrapper {
+		.glyphicon {
+			margin-right: 5px;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+$extraLightColor: #9b809d;
+$lighterColor: #755b76;
+$middleColor: #665168;
+$darkerColor: #524254;
+
+$white: #eee;
+$black: #312833;
+$red: #C7818B;
+$bg-white: #fdfdfd;
+
+$backgcolor: $bg-white; 
+$bg-color: $white;
+$inputBgColor: $white - 25;
+$errorColor: #A62929;
+$textColor: $black;
+$textColor2: $white;
+
+$header-height: 146.66px;
+$header-height-admin: 93px;
+
+$border-radius: 5px;
+$border-width: 1px;
+
+$max-xs: 767px;
+$max-sm: 1023px;
+$max-md: 1199px;
+$max-sm: 768px;
+$min-md: 1024px;
+$min-md: 1200px;
+
+$socialColors: ("facebook", #3b5998), ("twitter",#00aced), ("instagram",#cd486b), ("youtube",#cc181e), ("linkedin",#0077b5);
+
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/Lato-Light.ttf');
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'lato-regular';
+    src: url('../fonts/Lato-Regular.ttf');
+    font-weight: normal;
+}
+
+@mixin colorMenus($element) {
+  @each $item, $color in $element {
+      &.#{$item} {
+        background-color: $color;
+        @media (min-width: 1024px) {
+            &:hover {
+                background-color: $color - 25;
+            }
+        }
+      }
+  }
+}
+
+@mixin transform($info) {
+  transform: $info;
+  -webkit-transform: $info;
+  -moz-transform: $info;
+  -ms-transform: $info;
+}
+
+@mixin colorCategoriaBackground($element) {
+  @each $item, $color in $colorMenu2 {
+      &.#{$item} {
+        background-color: $color;
+        &:hover, &:active {
+          background-color: $color - 25;
+        }
+      }
+  }
+}
+
+@mixin placeholder($selector, $color){
+    #{$selector}::-webkit-input-placeholder {
+        color: $color;
+    }
+    #{$selector}::-moz-placeholder {
+        color: $color;
+    }
+    #{$selector}:-ms-input-placeholder {
+        color: $color;
+    }
+}

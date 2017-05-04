@@ -1,0 +1,28 @@
+.results-wrapper {
+	margin-bottom: 25px;
+	padding: 0;
+}
+
+.follower-content {
+	@extend .posts-content-wrapper;
+	margin-top: 15px;
+	padding: 15px;
+	.follower-text-content {
+		padding-left: 0;
+		button {
+			margin-top: 5px;
+		}
+	}
+	h3, h4 {
+		margin: 5px 0;
+	}
+}
+
+.flag-wrapper {
+	margin-right: 3px;
+	img {
+		border-radius: $border-radius;
+		vertical-align: top;
+		width: 24px;
+	}
+}

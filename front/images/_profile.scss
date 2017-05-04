@@ -1,0 +1,9 @@
+.profile-img-wrapper {
+	@extend .img-wrapper;
+	display: inline-block;
+	height: 300px;
+	max-width: 300px;
+	img {
+		border-radius: 100%;
+	}
+}
